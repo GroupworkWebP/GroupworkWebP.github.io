@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bungee', cursive;
+    width: 100%;
+    height: 100vh;
+    color:black;
+    background: #ffb703;
+    background-size: 100%;
+    position: relative;
+}
+
+header{
+	background:#fb8500;
+	color:#023047;
+	padding-top:20px;
+	min-height:70px;
+	border-bottom: #5f0f40 15px solid;
+}
+header .highlight, header.current a{
+	color:#5f0f40;
+	font-weight:bold;
+	font-size:70px;
+} 
+header h1{
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size:70px;
+	letter-spacing:10px;
+	padding-right:200px;
+}
+
+ img{  
+ height:15%;  
+ width: 15%;   
+ }  
+#left{    
+ float: left;
+padding-left:50px; 
+ }  
+ #right{   
+ float: right;
+padding-right:145px; 
+ }  
+.Reg{
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	color:#219ebc;
+}
+.play{
+	text-align:center;
+	font-size:50px;
+	font-family: 'Bungee', cursive;
+}
+footer{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background:#fb8500;
+	color:#5f0f40;
+	padding-top:30px;
+	min-height:70px;
+	border-top: #5f0f40 5px solid;
+}
+footer p{
+	text-align:center;
+}
+.container{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color:#ffe45e;
+    border-radius: 8px;
+    margin-bottom: 30px;
+	font-family: 'Bungee', cursive;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px; 
+}
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control{
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;   
+    border: 3px solid rgba(95, 15, 64);
+    margin-top: 5px;
+}
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+form .gender-details .gender-title{
+    font-size: 30px;
+    font-weight: 500;
+    }
+
+form .category label .dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two{
+     background: #9b59b6;
+     border-color: #d9d9d9;
+   }
+textarea{
+    resize: vertical;
+}
+label[class = show]{
+    height: 20px;
+    width: 10%;
+    font-size: 40px;
+}    
+button[Name  ="register"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Bungee', cursive;
+    color:rgb(24, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button[Name  = "register"]:hover{
+    background-color: rgb(128, 226, 236);
+}
+
+	button[Name  ="Start"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Bungee', cursive;
+    color:rgb(24, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button[Name = "Start"]:hover{
+    background-color: rgb(164, 250, 117);
+}
+button[Name ="Start"] a{
+	color:rgb(24, 166, 247);
+	text-decoration:none;
+	
+}
+button[Name  ="quit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Bungee', cursive;
+    color:rgb(24, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button[Name  = "quit"]:hover{
+    background-color: rgb(255, 166, 176);
+}
+button[Name  ="Score"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Bungee', cursive;
+    color:rgb(24, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button[Name ="Score"]:hover{
+	background-color: rgb(128, 226, 236);
+}
+input[id = user]{
+    height: 70px;
+    width: 10%;
+    font-size: 50px;
+}
+button[id  ="guess"]{
+    width: 15%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Bungee', cursive;
+    color:rgb(24, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+	
+}
+button[id ="guess"]:hover{
+	background-color: rgb(128, 226, 236);
+}
+button[id  ="playagain"]
+{
+    width: 15%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Bungee', cursive;
+    color:rgb(24, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button[id ="playagain"]:hover{
+	background-color: rgb(164, 250, 117);
